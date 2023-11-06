@@ -801,7 +801,7 @@ const defaultOptions = {
 };
 {
   defaultOptions.defaultUrl = {
-    value: "KiyanaYazdaniPortfolio.pdf",
+    value: "resume.fa.pdf",
     kind: OptionKind.VIEWER
   };
   defaultOptions.disablePreferences = {
