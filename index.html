@@ -6,19 +6,35 @@
   <script src="tailwindcss.3.3.5.min.css"></script>
   <script src="style.css"></script>
 	<title>Kiyana Yazdani</title>
+  <style>
+    @keyframes fadeInText {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in-text {
+      opacity: 0;
+      animation: fadeInText 0.8s ease-out forwards;
+    }
+    .fade-in-text.delay-1 { animation-delay: 0.1s; }
+    .fade-in-text.delay-2 { animation-delay: 0.2s; }
+    .fade-in-text.delay-3 { animation-delay: 0.3s; }
+    .fade-in-text.delay-4 { animation-delay: 0.4s; }
+    .fade-in-text.delay-5 { animation-delay: 0.5s; }
+    .fade-in-text.delay-6 { animation-delay: 0.6s; }
+  </style>
 </head>
 <body class="bg-white font-light">
 	<div class="max-h-screen grid min-w-full ps-4 pt-4 lg:ps-36 lg:pt-28">
 		<div class="grid items-center min-h-full border-t-2 border-s-2 border-black">
 			<div class="grid gap-4 ps-4 lg:ps-24 pt-4">
-				<h1 class="font-bold text-6xl lg:text-8xl">Kiyana Yazdani</h1>
-				<h2 class="font-light text-3xl lg:text-5xl text-gray-500">UI / UX Designer</h2>
+				<h1 class="font-bold text-6xl lg:text-8xl fade-in-text delay-1">Kiyana Yazdani</h1>
+				<h2 class="font-light text-3xl lg:text-5xl text-gray-500 fade-in-text delay-2">UI / UX Designer</h2>
 			</div>
-			<p class="text-xl lg:text-4xl ps-4 lg:ps-24 py-32">Kindly find my CV in the links below</p>
+			<p class="text-xl lg:text-4xl ps-4 lg:ps-24 py-32 fade-in-text delay-3">Kindly find my CV in the links below</p>
 			<div class="grid gap-4 ps-4 lg:ps-24">
-				<a class="font-light text-3xl lg:text-4xl underline underline-offset-4" href="/resume.en.pdf" target="_blank">My Resume</a>
-				<a class="font-light text-3xl lg:text-4xl underline underline-offset-4" href="https://linkedin.com/in/kiyana-yazdani" target="_blank">Linkedin</a>
-				<a class="font-light text-3xl lg:text-4xl underline underline-offset-4" href="/KiyanaYazdaniPortfolio.pdf" target="_blank">Protfolio</a>
+				<a class="font-light text-3xl lg:text-4xl underline underline-offset-4 fade-in-text delay-4" href="/resume.en.pdf" target="_blank">My Resume</a>
+				<a class="font-light text-3xl lg:text-4xl underline underline-offset-4 fade-in-text delay-5" href="https://linkedin.com/in/kiyana-yazdani" target="_blank">Linkedin</a>
+				<a class="font-light text-3xl lg:text-4xl underline underline-offset-4 fade-in-text delay-6" href="/KiyanaYazdaniPortfolio.pdf" target="_blank">Protfolio</a>
 			</div>
 		</div>
 	</div>
